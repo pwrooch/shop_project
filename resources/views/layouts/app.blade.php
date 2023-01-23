@@ -15,7 +15,7 @@
     
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js','resources/css/app.css'])
 </head>
 <body>
     <div id="app">
@@ -31,9 +31,6 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto my-2">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('products.create') }}">New Product</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('products.index') }}">Product</a>
                         </li>
