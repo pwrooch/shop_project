@@ -11,7 +11,7 @@
                     <label for="">Product Name</label>
                     <input class="form-control" type="text" name="name" placeholder="Product Name" required value="{{ $product->name }}">
                     <label for="comment">Details:</label>
-                    <textarea class="form-control" type="text" name="details" required></textarea>
+                    <textarea class="form-control" type="text" name="details" required>{{ $product->details }}</textarea>
                     <label for="">Picture</label>
                     <input class="form-control" type="file" name="image" placeholder="Picture" required value="{{ $product->image }}">
                     <label for="">Price</label>

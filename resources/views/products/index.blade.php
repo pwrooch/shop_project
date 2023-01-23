@@ -12,10 +12,10 @@
                             <img src="https://images.pexels.com/photos/13428021/pexels-photo-13428021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="container my-2">
-                                    <div class="">
+                                    <div class="fw-bolder">
                                         <h4 class="card-title">{{ $item->name }}</h4>
                                     </div>
-                                    <div class="">
+                                    <div class="fw-light">
                                         <p class="card-text ">{{ $item->details }}</p>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@
                     </div>
                     @endforeach
                  </div>
+                </div>
             </div>
         </div>
-    </div>
 @endsection
