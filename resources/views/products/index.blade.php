@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12">
                 <strong>List Product</strong>
-                 <div class="row">
+                 <div class="row my-2">
                     @foreach ($productsView as $item)
                     <div class="col-3">
                         <div class="card mt-4" style="width: 20rem; ">
@@ -13,16 +13,16 @@
                             <div class="card-body">
                                 <div class="container my-2">
                                     <div class="fw-bolder">
-                                        <h4 class="card-title">{{ $item->name }}</h4>
+                                        <h4 class="text-dark">{{ $item->name }}</h4>
                                     </div>
                                     <div class="fw-light">
-                                        <p class="card-text ">{{ $item->details }}</p>
+                                        <p class="text-dark">{{ $item->details }}</p>
                                     </div>
                                 </div>
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col">
-                                            <p class="card-text">{{ $item->price }} Baht</p>
+                                        <div class="fw-bold">
+                                            <p>{{ $item->price }} Baht</p>
                                         </div>
                                         <div class="row mt-2">
                                             <form action="{{ route('products.destroy', $item->id) }}" method="POST">
@@ -39,7 +39,9 @@
                     </div>
                     @endforeach
                  </div>
+                    {!! $productsView->links('pagination::bootstrap-5') !!}
                 </div>
             </div>
-        </div>
+        </div>    
+    </div>
 @endsection
